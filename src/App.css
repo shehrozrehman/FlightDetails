@@ -28,10 +28,71 @@
   color: #61dafb;
 }
 
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #fccb90;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom right, rgba(252, 203, 144, 1), rgba(213, 126, 235, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom right, rgba(252, 203, 144, 1), rgba(213, 126, 235, 1))
+}
+
+.mask-custom {
+  background: rgba(24, 24, 16, .2);
+  border-radius: 2em;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+@media (max-width: 576px) {
+
+  .card {
+    width: 100% !important;
+    /* background-color: red !important; */
+  }
+
+  .dropdowns {
+    flex-direction: column !important;
+  }
+
+  .ckin_inp {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .inp_gap {
+    gap: 5px !important;
+    margin-top: 10px !important;
+    /* background-color: #61dafb !important; */
+
+  }
+
+  .btns {
+    flex-direction: column !important;
+  }
+
+  .font_head {
+    font-size: 16px !important;
+  }
+
+  .font_head1 {
+    font-size: 14px !important;
+  }
+
+
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
